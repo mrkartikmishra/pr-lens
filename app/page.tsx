@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import Logout from "@/module/auth/components/logout";
 import { requireAuth } from "@/module/auth/utils/auth-utils";
 
 export default async function Home() {
@@ -6,7 +7,9 @@ export default async function Home() {
 
   return (
     <div className="flex justify-center items-center h-screen">
-      <Button>Hello</Button>
+      <Logout>
+        <Button>Logout</Button>
+      </Logout>
     </div>
   );
 }
