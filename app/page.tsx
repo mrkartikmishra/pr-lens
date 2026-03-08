@@ -1,10 +1,9 @@
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex justify-center items-center h-screen">
-      <Button>Hello</Button>
+      <Button onClick={() => alert("Coderabbit")}>Hello</Button>
     </div>
   );
 }
