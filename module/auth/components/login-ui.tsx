@@ -4,6 +4,7 @@ import { GitPullRequest, Github } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { ToggleThemeButton } from "@/components/toggle-theme-button/toggle-theme-button";
 import { signIn } from "@/lib/auth-client";
 import { useState } from "react";
 
@@ -25,6 +26,9 @@ const LoginUI = () => {
 
   return (
     <section className="relative bg-background min-h-screen overflow-hidden text-foreground">
+      <div className="top-12 right-16 absolute">
+        <ToggleThemeButton />
+      </div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_10%,color-mix(in_oklch,var(--primary)_28%,transparent),transparent_42%),radial-gradient(circle_at_88%_88%,color-mix(in_oklch,var(--chart-2)_22%,transparent),transparent_45%)] pointer-events-none" />
 
       <div className="relative flex items-center mx-auto px-6 sm:px-10 lg:px-14 py-10 w-full max-w-340 min-h-screen">
